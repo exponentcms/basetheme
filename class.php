@@ -19,6 +19,7 @@
 if (class_exists('basetheme')) return;
 
 class basetheme extends theme {
+    public $stock_theme = true;
 	function name() { return "Base Theme"; }
 	function author() { return "Phillip Ball"; }
 	function description() { return "A bare-bones theme based off <a href=\"http://developer.yahoo.com/yui/grids/\" target=\"_blank\">YUI 2 Gids</a>"; }
