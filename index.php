@@ -5,8 +5,11 @@
 	    expTheme::head(array(
 	        "xhtml"=>false,
 		    "css_primer"=>array(
-                YUI2_RELATIVE."yui2-reset-fonts-grids/yui2-reset-fonts-grids.css"),
-	        "css_core"=>array("common"),
+                YUI2_RELATIVE."yui2-reset-fonts-grids/yui2-reset-fonts-grids.css"
+            ),
+	        "css_core"=>array(
+                "common"
+            ),
 	        "css_links"=>true,
 	        "css_theme"=>true
 	        )
@@ -23,7 +26,8 @@
 			</div>
 			<div id="bd">
 				<div class="yui-b">
-	                <?php expTheme::module(array("module"=>"container","view"=>"Default","source"=>"@left")); ?>
+	                <?php //expTheme::module(array("module"=>"container","view"=>"Default","source"=>"@left")); ?>
+                    <?php expTheme::module(array("controller"=>"container2","action"=>"showall","view"=>"showall","source"=>"@left")); ?>
 				</div>
 				<div id="yui-main">
 					<div class="yui-b">
@@ -34,7 +38,7 @@
 				</div>
 			</div>
 			<div id="ft">
-	            <?php expTheme::module(array("controller"=>"text","action"=>"showall","view"=>"single","source"=>"@footer","chrome"=>1)) ?>
+	            <?php expTheme::module(array("controller"=>"text","action"=>"showall","view"=>"showall_single","source"=>"@footer","chrome"=>1)) ?>
 			</div>
 		</div>
 	    <?php expTheme::foot(); ?>
