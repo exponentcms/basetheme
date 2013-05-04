@@ -27,7 +27,7 @@
 			<div id="bd">
 				<div class="yui-b">
 	                <?php //expTheme::module(array("module"=>"container","view"=>"Default","source"=>"@left","scope"=>"sectional")); ?>
-                    <?php expTheme::module(array("controller"=>"container2","action"=>"showall","view"=>"showall","source"=>"@left","scope"=>"sectional")); ?>
+                    <?php expTheme::module(array("controller"=>"container","action"=>"showall","view"=>"showall","source"=>"@left","scope"=>"sectional")); ?>
 				</div>
 				<div id="yui-main">
 					<div class="yui-b">
